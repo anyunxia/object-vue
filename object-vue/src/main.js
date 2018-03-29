@@ -9,9 +9,11 @@ import VueSwiper from 'vue-awesome-swiper'
 import './assets/font/iconfont.css'
 import VueResource from 'vue-resource'
 
+
 Vue.use(VueSwiper)
 Vue.config.productionTip = false
 Vue.use(VueResource)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

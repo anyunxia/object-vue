@@ -30,11 +30,11 @@
   	<div class="aside">
   		 <p>
 	  		 	<i class="iconfont">&#xe769;</i>
-	  		 	<span>定位失败</span>
+	  		 	<a>定位失败</a>
   		 </p>
   		 <p>
 	  		 	<i class="iconfont">&#xe73b;</i>
-	  		 	<span>5折泡温泉</span>
+	  		 	<router-link to="/detail">5折泡温泉</router-link>
   		 </p>
   	</div>
   </div>
