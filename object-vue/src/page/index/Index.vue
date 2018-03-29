@@ -1,9 +1,9 @@
 <template>
   <div>
   	<header class="header">
-  		<div>返回</div>
-  		<div><input type="text" /></div>
-  		<div>城市</div>
+  		<div class="iconfont">&#xe779;</div>
+  		<div class="center"><input type="text" placeholder="输入城市/经典/游玩/主题"/><i class="iconfont">&#xe752;</i></div>
+  		<div class="right">城市<span></span></div>
   	</header>
   	 <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback" class="swiper">
     <!-- slides -->
@@ -34,7 +34,7 @@ export default {
   }
 }
 </script>
-
+<link rel="stylesheet" href="../iconfont/iconfont.css" />
 <style scoped>
 	.header{
 		display: flex;
@@ -47,10 +47,36 @@ export default {
 		padding:0 0.2rem;
 	}
 	.header input{
-		border:0;
-		width:5.5rem;
+		border:none;
+		width:4.9rem;
 		height:0.6rem;
 		border-radius: 0.05rem;
+		padding-left:0.6rem;
+	}
+	.header .center{
+			position:relative;
+			
+	}
+	.header .center .iconfont{
+		position:absolute;
+		color:#999999;
+		left:0.2rem;
+		top:0.15rem;
+	}
+	.header .right{
+		position:relative;
+		width: 0.8rem;
+	}
+	.header>.right>span:after{
+		content:"";
+		display:block;
+		width:0;
+		height:0;
+		border:5px solid red;
+		border-color:#fff transparent transparent transparent;
+		position:absolute;
+		left:0.55rem;
+		top:0.08rem; 	
 	}
 	.swiper img{
 		height:4rem;
